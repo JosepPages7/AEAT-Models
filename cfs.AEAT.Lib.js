@@ -1,6 +1,6 @@
 ﻿// *********************************************
 // Copyright (c) 2022 CORUS Financial Soft, S.L.
-// https://github.com/JosepPages7
+// https://github.com/JosepPages7 1
 // *********************************************
 
 var pas = { $libimports: {}};
