@@ -25557,6 +25557,7 @@ rtl.module("cfs.AEAT",["System","SysUtils","JS","cfs.IVA.Generar.MBase","cfs.IVA
     var Result = "";
     var M303 = null;
     var Data = null;
+    pas.System.Writeln($impl.GetVersion());
     if (ParametrosJson === "") {
       Result = $impl.ResultadoGenerarModelo("ParametrosJson is empty","","","");
       return Result;
@@ -25600,6 +25601,7 @@ rtl.module("cfs.AEAT",["System","SysUtils","JS","cfs.IVA.Generar.MBase","cfs.IVA
     var Result = "";
     var M390 = null;
     var Data = null;
+    pas.System.Writeln($impl.GetVersion());
     if (ParametrosJson === "") {
       Result = $impl.ResultadoGenerarModelo("ParametrosJson is empty","","","");
       return Result;
@@ -25636,6 +25638,11 @@ rtl.module("cfs.AEAT",["System","SysUtils","JS","cfs.IVA.Generar.MBase","cfs.IVA
     return Result;
   };
   $mod.$implcode = function () {
+    $impl.GetVersion = function () {
+      var Result = "";
+      Result = "AEAT Models: 2022-04-29";
+      return Result;
+    };
     $impl.ResultadoGenerarModelo = function (error, Modelo, ServValiurl, ServValiDatos) {
       var Result = "";
       Result = "{";
