@@ -25771,6 +25771,6 @@ rtl.module("program",["System","cfs.AEAT"],function () {
     pas["Generics.Defaults"].IEnumerable$G8.$initSpec();
   };
   $mod.$main = function () {
-    pas["cfs.AEAT"].GenerarM303("");
+    pas["cfs.AEAT"].GetVersion();
   };
 });
