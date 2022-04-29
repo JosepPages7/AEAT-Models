@@ -25092,7 +25092,6 @@ rtl.module("cfs.IVA.Generar.M303",["System","SysUtils","Classes","cfs.IVA.Types"
         M.FDebePresentarM390 = this.FDebePresentarM390;
         M.FOpcionAplicacionProrrataEspecial = this.FOpcionAplicacionProrrataEspecial;
         M.FRevocacionAplicacionProrrataEspecial = this.FRevocacionAplicacionProrrataEspecial;
-        pas.System.Writeln("M.RevocacionAplicacionProrrataEspecial: " + pas.SysUtils.BoolToStr(M.FRevocacionAplicacionProrrataEspecial,false));
         if (Ejercicio !== "") M.FEjercicio = Ejercicio;
         Result = M.Generar();
       } finally {
@@ -25202,7 +25201,6 @@ rtl.module("cfs.IVA.M390_2020",["System","SysUtils","Classes","Generics.Collecti
       if (this.FTipoEntidad === pas["cfs.Model.Empresas"].TcfsTipoEntidad.tenPersonaFisica) {
         NombreEmpresa = pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(pas["cfs.Utils"].cfsRightPad(60,this.FPersonaFisica.PrimerApellido + " " + this.FPersonaFisica.SegundoApellido," ") + this.FPersonaFisica.Nombre)}
        else NombreEmpresa = pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(this.FNombreFiscal);
-      pas.System.Writeln("DatosEstadisticos[1].Actividad: " + this.GetDatosEstadisticos(1).Actividad);
       Result = "<T39001000>  " + pas["cfs.Utils"].cfsRightPad(9,this.FNIF," ") + pas["cfs.Utils"].cfsRightPad(80,NombreEmpresa," ") + pas["cfs.Utils"].cfsRightPad(4,this.FEjercicio," ") + pas["cfs.Utils"].cfsRightPad(2,""," ") + pas["cfs.Utils"].cfsRightPad(1,SujetoPasivo_RegistroDevolucion_Mensual," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(7,""," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(9,""," ") + pas["cfs.Utils"].cfsRightPad(1,"2"," ") + pas["cfs.Utils"].cfsRightPad(1,RegimenCriterioIVACaja," ") + pas["cfs.Utils"].cfsRightPad(1,DestinatarioCriterioIVACaja," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(13,""," ") + pas["cfs.Utils"].cfsRightPad(40,pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(this.GetDatosEstadisticos(1).Actividad)," ") + pas["cfs.Utils"].cfsRightPad(1,pas.SysUtils.TByteHelper.ToString$1.call({p: this.GetDatosEstadisticos(1), get: function () {
           return this.p.Clave;
         }, set: function (v) {
@@ -25322,7 +25320,6 @@ rtl.module("cfs.IVA.M390_2021",["System","SysUtils","Classes","Generics.Collecti
       if (this.FTipoEntidad === pas["cfs.Model.Empresas"].TcfsTipoEntidad.tenPersonaFisica) {
         NombreEmpresa = pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(pas["cfs.Utils"].cfsRightPad(60,this.FPersonaFisica.PrimerApellido + " " + this.FPersonaFisica.SegundoApellido," ") + this.FPersonaFisica.Nombre)}
        else NombreEmpresa = pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(this.FNombreFiscal);
-      pas.System.Writeln("DatosEstadisticos[1].Actividad: " + this.GetDatosEstadisticos(1).Actividad);
       Result = "<T39001000>  " + pas["cfs.Utils"].cfsRightPad(9,this.FNIF," ") + pas["cfs.Utils"].cfsRightPad(80,NombreEmpresa," ") + pas["cfs.Utils"].cfsRightPad(4,this.FEjercicio," ") + pas["cfs.Utils"].cfsRightPad(2,""," ") + pas["cfs.Utils"].cfsRightPad(1,SujetoPasivo_RegistroDevolucion_Mensual," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(7,""," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(9,""," ") + pas["cfs.Utils"].cfsRightPad(1,"2"," ") + pas["cfs.Utils"].cfsRightPad(1,RegimenCriterioIVACaja," ") + pas["cfs.Utils"].cfsRightPad(1,DestinatarioCriterioIVACaja," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(1,"0"," ") + pas["cfs.Utils"].cfsRightPad(13,""," ") + pas["cfs.Utils"].cfsRightPad(40,pas["cfs.AEAT.Utils"].TAEAT.FiltrarCharsModelos(this.GetDatosEstadisticos(1).Actividad)," ") + pas["cfs.Utils"].cfsRightPad(1,pas.SysUtils.TByteHelper.ToString$1.call({p: this.GetDatosEstadisticos(1), get: function () {
           return this.p.Clave;
         }, set: function (v) {
