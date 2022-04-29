@@ -25637,7 +25637,7 @@ rtl.module("cfs.AEAT",["System","SysUtils","JS","cfs.IVA.Generar.MBase","cfs.IVA
   };
   this.GetVersion = function () {
     var Result = "";
-    Result = "AEAT Models: 2022-04-29 11:54";
+    Result = "AEAT Models: 2022-04-29 12:00";
     return Result;
   };
   $mod.$implcode = function () {
