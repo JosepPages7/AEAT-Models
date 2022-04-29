@@ -1,6 +1,6 @@
 ﻿// *********************************************
 // Copyright (c) 2022 CORUS Financial Soft, S.L.
-// https://github.com/JosepPages7 1
+// https://github.com/JosepPages7
 // *********************************************
 
 var pas = { $libimports: {}};
@@ -25681,15 +25681,12 @@ rtl.module("cfs.AEAT",["System","SysUtils","JS","cfs.IVA.Generar.MBase","cfs.IVA
           MBase.FdmEmpresasDatosEstadisticos.Add(I,pas["cfs.js.utils"].TcfsJSUtils.AsString(DE,"actividad",true),pas["cfs.js.utils"].TcfsJSUtils.AsInteger(DE,"clave",true),pas["cfs.js.utils"].TcfsJSUtils.AsString(DE,"epigrafeIAE",true));
         };
       };
-      pas.System.Writeln("Find representantes");
       if (pas["cfs.js.utils"].TcfsJSUtils.IsDefined(Empresa,"representantes",false)) {
-        pas.System.Writeln("Found representantes");
         Representantes = Empresa["representantes"];
         for (var $l1 = 0, $end1 = rtl.length(Representantes) - 1; $l1 <= $end1; $l1++) {
           I = $l1;
           RE = Representantes[I];
           MBase.FdmEmpresasDatosRepresentantes.Add(I,pas["cfs.js.utils"].TcfsJSUtils.AsString(RE,"nif",true),pas["cfs.js.utils"].TcfsJSUtils.AsString(RE,"nombre",false),pas["cfs.js.utils"].TcfsJSUtils.AsString(RE,"primerApellido",false),pas["cfs.js.utils"].TcfsJSUtils.AsString(RE,"segundoApellido",false));
-          pas.System.Writeln("RE: " + pas["cfs.js.utils"].TcfsJSUtils.AsString(RE,"nif",true));
         };
       };
     };
